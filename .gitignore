@@ -1,0 +1,23 @@
+# Nuxt build artifacts
+.nuxt/
+.output/
+.data/
+
+# Dependencies
+node_modules/
+
+# Test output
+test-results/
+playwright-report/
+coverage/
+
+# Local configuration and logs
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# Editor files
+.idea/
+.vscode/
