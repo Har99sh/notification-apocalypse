@@ -33,7 +33,7 @@
     "eslint": "^9.35.0",
     "happy-dom": "^18.0.1",
     "typescript": "^5.9.2",
-    "vitest": "^3.2.4",
+    "vitest": "^5.0.1",
     "vue-tsc": "^3.0.6"
   }
 }
