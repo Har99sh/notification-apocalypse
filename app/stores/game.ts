@@ -86,6 +86,7 @@ export const useGameStore = defineStore('game', {
     },
     showTutorial() { this.phase = 'tutorial' },
     startGame() {
+      if (import.meta.client) this.setSpeed(new URLSearchParams(window.location.search).get('speed'))
       this.runNumber += 1
       const nextSeed = this.runNumber === 1 ? 104729 : Math.floor(Math.random() * 1_000_000) + 1
       this.phase = 'playing'; this.elapsed = 0; this.reportProgress = 0; this.focus = 100; this.cognitiveLoad = 0; this.score = 1000

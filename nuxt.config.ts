@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   modules: ['@pinia/nuxt', '@nuxt/eslint'],
   css: ['~/assets/css/main.css'],
   vite: { plugins: [tailwindcss()] },
+  nitro: {
+    preset: 'static',
+    sourceMap: false,
+  },
+  sourcemap: { client: false, server: false },
   typescript: { strict: true, typeCheck: true },
   app: {
     head: {
