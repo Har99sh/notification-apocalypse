@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { useGameStore } from '~/stores/game'
 const game = useGameStore()
-const route = useRoute()
 const clientReady = ref(false)
 useGameEngine()
 useGameAudio()
 
 onMounted(() => {
   game.hydrate()
-  game.setSpeed(route.query.speed)
+  game.setSpeed(new URLSearchParams(window.location.search).get('speed'))
   clientReady.value = true
 })
 

@@ -11,6 +11,8 @@ npm run dev
 
 Open `http://localhost:3000`. Add `?speed=4` (up to `10`) to accelerate the simulation for testing.
 
+Cloudflare Pages setup, CI/CD operation, custom-domain configuration, and rollback procedures are documented in [DEPLOYMENT.md](./DEPLOYMENT.md).
+
 ## Commands
 
 ```bash
@@ -18,6 +20,8 @@ npm run lint
 npm run typecheck
 npm run test
 npm run build
+npm run generate
+npm run check:build
 npm run test:e2e
 ```
 
